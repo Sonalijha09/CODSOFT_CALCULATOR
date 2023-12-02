@@ -1,0 +1,41 @@
+def Add(num1, num2):
+	return num1 + num2
+
+def Subtract(num1, num2):
+	return num1 - num2
+
+def Multiply(num1, num2):
+	return num1 * num2
+
+
+def Divide(num1, num2):
+	return num1 / num2
+
+print("Please select operation that is going to use -\n" \
+	"1. Add\n" \
+	"2. Subtract\n" \
+	"3. Multiply\n" \
+   "4. Divide\n")
+
+select = int(input("Select the operations form 1, 2, 3, 4 :"))
+
+number_1 = int(input("Enter the first operating number: "))
+number_2 = int(input("Enter the second operating number: "))
+
+if select == 1:
+	print(number_1, "+", number_2, "=",
+	Add(number_1, number_2))
+
+elif select == 2:
+	print(number_1, "-", number_2, "=",
+	Subtract(number_1, number_2))
+
+elif select == 3:
+	print(number_1, "*", number_2, "=",
+Multiply(number_1, number_2))
+
+elif select == 4:
+	print(number_1, "/", number_2, "=",
+	Divide(number_1, number_2))
+else:
+	print("Invalid input")
